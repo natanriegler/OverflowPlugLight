@@ -41,16 +41,17 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/medicao"/>
+            android:src="@drawable/medicao" />
 
     </LinearLayout>
 
 
     <include
+        android:visibility="visible"
         layout="@layout/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:isScrollContainer="false"/>
+        android:isScrollContainer="true"/>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -74,18 +75,11 @@
             android:background="@drawable/selectshadow" />
     </FrameLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_gravity="bottom"
-        android:gravity="top"
-        android:orientation="horizontal">
-
-
         <ImageButton
+            android:layout_marginBottom="25dp"
             android:layout_width="50dp"
             android:layout_height="60dp"
-            android:layout_gravity="left"
+            android:layout_gravity="bottom"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="80dp"
             android:background="@drawable/histicon"
@@ -95,9 +89,11 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
             android:background="@drawable/energicon"
             android:foregroundGravity="bottom"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -105,18 +101,16 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
             android:layout_marginLeft="80dp"
             android:background="@drawable/configicon"
             app:layout_constraintHorizontal_bias="0.914"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-
-    </LinearLayout>
 
 
 </FrameLayout>
